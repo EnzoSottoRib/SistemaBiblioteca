@@ -1,14 +1,18 @@
 package SistemaBiblioteca;
-public class DigitalMedia {
+public class DigitalMedia extends LibraryItem {
 
     private String fileFormat;
 
-    
-
-    public void play(){
-
+    public DigitalMedia(String title, String author, int publicationYear, String fileFormat){
+        this.setTitle(title);
+        this.setAuthor(author);
+        this.setPublicationYear(publicationYear);
+        this.fileFormat = fileFormat;
     }
 
+    public void play(){
+        System.out.println("Tocando...");
+    }
 
 
     public String getFileFormat() {
