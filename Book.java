@@ -1,8 +1,15 @@
 package SistemaBiblioteca;
-public class Book {
+public class Book extends LibraryItem {
 
     private String genre;
 
+
+    public Book(String title, String author, int publicationYear, String genre){
+        this.setTitle(title);
+        this.setAuthor(author);
+        this.setPublicationYear(publicationYear);
+        this.genre = genre;
+    }
     
 
     public String getGenre() {
@@ -17,7 +24,7 @@ public class Book {
 
 
     public void readSample(){
-
+        System.out.println("Lorem ipsum dolor sit amet...");
     }
 
 

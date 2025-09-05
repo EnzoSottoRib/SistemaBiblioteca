@@ -6,11 +6,11 @@ public class LibraryItem implements Borrowable{
     private int publicationYear;
 
     public void borrow(){
-
+        System.out.println("Item emprestado!");
     }
 
     public void returnItem(){
-
+        System.out.println("Item devolvido!");
     }
 
 
@@ -44,5 +44,4 @@ public class LibraryItem implements Borrowable{
     }
 
     
-
 }
